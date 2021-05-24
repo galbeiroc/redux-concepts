@@ -24,7 +24,7 @@ Not allowed to directly update the state object
 #### Third Principle
 * To Specify how the state tree is transformed by actions, you wire pure reducers"
 
-Reducer - (previousState, action) => newState
+Reducer - ___(previousState, action) => newState___
 
 ## Action
 The only way your application can interact with store
@@ -32,4 +32,11 @@ Carry some information from your app to the redux store
 Plain JS object
 Have a 'type' property that indicates the type of action being performed
 The 'type' property is typically defined as string constant
+
+## Reducer
+Specify how the app's state changes in response to actions sent to the store
+
+Function that accepts state and action as arguments, and return the next state of the application.
+
+___(previousState, action) => newState___
 
