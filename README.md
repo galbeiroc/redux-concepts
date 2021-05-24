@@ -40,3 +40,12 @@ Function that accepts state and action as arguments, and return the next state o
 
 ___(previousState, action) => newState___
 
+## Store
+One store for the entire application
+Responsibilities-
+
+* Holds application
+* Allows access to state via ___getState()___
+* Allows state to be updated via ___dispatch(action)___
+* Registers listeners via ___subscribe(listener)___
+* Handles unregistering of the listeners via the function returned by subscribe(listener)
